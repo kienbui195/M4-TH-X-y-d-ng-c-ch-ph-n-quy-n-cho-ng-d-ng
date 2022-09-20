@@ -1,0 +1,62 @@
+<div class="page-heading">
+
+    <h1>Register a new product</h1>
+
+</div>
+
+<form action="/api/product/create" method="POST" enctype="multipart/form-data">
+
+    <div class="control-group">
+
+        <div class="form-group floating-label-form-group controls">
+
+            <input type="hidden" class="form-control" id="access_token" name="access_token"
+                   value="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjMyOTg5ZTU5MzM0ZmY5M2I2YTE3MWYwIiwidXNlcm5hbWUiOiJhZG1pbjEiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2NjM2Njc5OTEsImV4cCI6MTY2MzcwMzk5MX0.xVxpmtOsruf3OMou65pPg4nD3gl6paHjwFWvoIHQWb4">
+
+        </div>
+
+    </div>
+
+    <div class="control-group">
+
+        <div class="form-group floating-label-form-group controls">
+
+            <label>Name</label>
+
+            <input type="text" class="form-control" id="name" name="name">
+
+        </div>
+
+    </div>
+
+    <div class="control-group">
+
+        <div class="form-group floating-label-form-group controls">
+
+            <label>Price</label>
+
+            <input type="text" class="form-control" id="price" name="price">
+
+        </div>
+
+    </div>
+
+    <div class="control-group">
+
+        <div class="form-group floating-label-form-group controls">
+
+            <label>Category</label>
+
+            <input type="text" class="form-control" id="category" name="category">
+
+        </div>
+
+    </div>
+
+    <div class="form-group">
+
+        <button type="submit" class="btn btn-primary">Create</button>
+
+    </div>
+
+</form>
